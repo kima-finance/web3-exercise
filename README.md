@@ -20,7 +20,7 @@ This exercise will show us:
 
 ## What are you building?
 
-You'll be building a Web3 app that allows a buyer to buy a stock with stable coin from a seller, and for a broker to supervide and facilitate the transaction. This scenario simulates one of the most common Kima use cases known as **DvP** (Delivery vs. Payment).
+You'll be building a Web3 app that allows a buyer to buy a stock with stable coin from a seller, and for a broker to supervise and facilitate the transaction. This scenario simulates one of the most common Kima use cases known as **DvP** (Delivery vs. Payment).
 
 ### What will you need
 
@@ -54,7 +54,7 @@ You'll deliver the exercise in 3 ways:
 
 ### Video
 
-Take a short video fo the app's flow. I recommend using at least 2 diffrent browsers, and both buyer and seller will need to use a wallet to sign a transaction, and wallets like attaching an address to a domain, not a route.
+Take a short video fo the app's flow. I recommend using at least 2 different browsers, and both buyer and seller will need to use a wallet to sign a transaction, and wallets like attaching an address to a domain, not a route.
 
 Start by simulating the buyer, then switch to the seller, finally show the broker's dashboard to approve the transaction.
 
@@ -84,7 +84,7 @@ If you have any questions, or comments, please contact your interviewer **BEFORE
 
 Our web app has 3 routes:
 1. `/buyer` - the buyer interface, allowing a buyer to buy stocks.
-1. `/seller` - the seller interfance, allowing the buyer to approve sales
+1. `/seller` - the seller interface, allowing the buyer to approve sales
 1. `/broker` - a sort of dashboard, allowing the broker to see what deals are happening
 
 ## Flow
@@ -115,7 +115,7 @@ We have 3 personas in our demo app. Each will access the app through their own r
 ### Seller flow
 
 1. The seller logs in to the `/seller` route (again, fake a login form).
-1. They see their balnces of both USDX and MyStock.
+1. They see their Balance of both USDX and MyStock.
 1. When the buyer submits a buy transaction (see 4 in user flow), a line appears on the seller's screen showing how many unit the buyer wants, and what's the total USDX value for the transaction.
     1. There are 2 buttons at the end of the row: a red `reject` and a green `accept` buttons.
 1. When the seller clicks `accept`, they use their Web3 wallet to send the proper units of MyStock **to the broker's address**.
@@ -125,10 +125,10 @@ We have 3 personas in our demo app. Each will access the app through their own r
 ### Broker flow
 
 1. The broker logs into the `/broker` route (again, fake login form).
-1. They see a list of transctions they need to broker. A transaction will have the following fields:
+1. They see a list of transactions they need to broker. A transaction will have the following fields:
     1. Buyer address
     1. Buyer offered USDX amount
-    1. Buyer funds receicved?
+    1. Buyer funds received?
         1. This field will either show "no", or the hash of the transaction that the buyer used to send USDX to the broker.
         1. The hash should be a link to a blockchain explorer showing the transaction onchain.
     1. Seller address
@@ -141,7 +141,7 @@ We have 3 personas in our demo app. Each will access the app through their own r
 1. When the broker clicks `execute`:
     1. The Broker sends the MyStock units they received from the seller to the buyer address.
     1. The broker sends the USDX units they received from the buyer to the seller.
-    1. When both transctions finish, the 2 hashes of the transactions are shown (each as a link to a blockchain explorer).
+    1. When both transactions finish, the 2 hashes of the transactions are shown (each as a link to a blockchain explorer).
     1. The transaction status changes to "finalized".
 
 ### End result
