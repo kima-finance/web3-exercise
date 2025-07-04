@@ -54,7 +54,7 @@ You'll deliver the exercise in 3 ways:
 
 ### Video
 
-Take a short video fo the app's flow. I recommend using at least 2 different browsers, and both buyer and seller will need to use a wallet to sign a transaction, and wallets like attaching an address to a domain, not a route.
+Take a short video fo the app's flow. I recommend using at least 2 different browsers, as both buyer and seller will need to use a wallet to sign a transaction, and wallets like attaching an address to a domain, not a route.
 
 Start by simulating the buyer, then switch to the seller, finally show the broker's dashboard to approve the transaction.
 
@@ -157,4 +157,4 @@ At the end of a transaction, the expected result is this:
     1. Broker to seller USDX
 
 
-**Good luck**
+**Good luck!**
